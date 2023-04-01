@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "159040049189",
+    "project_id": "saree3-35304",
+    "storage_bucket": "saree3-35304.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159040049189:android:f23f6180be400998a8afcc",
+        "android_client_info": {
+          "package_name": "com.sareea.userapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159040049189-90qprt0ic3cpl42lvlfhqnad2v9tprs1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sareea.userapp",
+            "certificate_hash": "532534ab2e5e55e07009f9989dfcac1068d74c21"
+          }
+        },
+        {
+          "client_id": "159040049189-itl00m7c1t0d1kkeghqm0b0d4stvcruv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi3BnMzt2NyMK0ugsg0BzOb2aL6X_e06E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159040049189-itl00m7c1t0d1kkeghqm0b0d4stvcruv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
