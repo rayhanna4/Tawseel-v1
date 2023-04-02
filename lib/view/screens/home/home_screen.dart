@@ -256,7 +256,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                                     overflow:
                                                     TextOverflow.ellipsis,
                                                   ),
-                                                  Icon(Icons.arrow_drop_down,color: Colors.white,)
                                                 ],
                                               ),
                                             ),

@@ -102,8 +102,8 @@ class PopularStoreView extends StatelessWidget {
                                   );
                                 },
                                 child: Container(
-                                  height: 250,
-                                  width: 250,
+                                  height: 150,
+                                  width: 192,
                                   decoration: BoxDecoration(
                                     color: Theme.of(context).cardColor,
                                     borderRadius: BorderRadius.circular(20),
