@@ -13,7 +13,7 @@ class CustomButton extends StatelessWidget {
   final double radius;
   final IconData icon;
   CustomButton({this.onPressed, @required this.buttonText, this.transparent = false, this.margin, this.width, this.height,
-    this.fontSize, this.radius = 5, this.icon});
+    this.fontSize, this.radius = 25, this.icon});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class CustomButton extends StatelessWidget {
       backgroundColor: onPressed == null ? Theme.of(context).disabledColor : transparent
           ? Colors.transparent : Theme.of(context).primaryColor,
       minimumSize: Size(width != null ? width : Dimensions.WEB_MAX_WIDTH, height != null ? height : 50),
-      padding: EdgeInsets.zero,
+      padding: EdgeInsets.all(8),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(radius),
       ),

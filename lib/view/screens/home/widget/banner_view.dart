@@ -28,7 +28,7 @@ class BannerView extends StatelessWidget {
       return (bannerList != null && bannerList.length == 0) ? SizedBox() : Container(
         width: MediaQuery.of(context).size.width,
         height: GetPlatform.isDesktop ? 500 : MediaQuery.of(context).size.width * 0.45,
-        padding: EdgeInsets.only(top: Dimensions.PADDING_SIZE_DEFAULT),
+        padding:EdgeInsets.fromLTRB(0, 3 , 0 , 0),
         child: bannerList != null ? Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
@@ -38,7 +38,7 @@ class BannerView extends StatelessWidget {
                   autoPlay: true,
                   enlargeCenterPage: true,
                   disableCenter: true,
-                  viewportFraction: 0.8,
+                  viewportFraction: 0.98,
                   autoPlayInterval: Duration(seconds: 7),
                   onPageChanged: (index, reason) {
                     bannerController.setCurrentIndex(index, true);
