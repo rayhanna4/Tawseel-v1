@@ -32,16 +32,18 @@ class CustomButton extends StatelessWidget {
       child: TextButton(
         onPressed: onPressed,
         style: _flatButtonStyle,
-        child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-          icon != null ? Padding(
-            padding: EdgeInsets.only(right: Dimensions.PADDING_SIZE_EXTRA_SMALL),
-            child: Icon(icon, color: transparent ? Theme.of(context).primaryColor : Theme.of(context).cardColor),
-          ) : SizedBox(),
-          Text(buttonText ??'', textAlign: TextAlign.center, style: robotoBold.copyWith(
-            color: transparent ? Theme.of(context).cardColor : Theme.of(context).cardColor,
-            fontSize: fontSize != null ? fontSize : Dimensions.fontSizeLarge,
-          )),
-        ]),
+        child: SingleChildScrollView(
+          child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+            icon != null ? Padding(
+              padding: EdgeInsets.only(right: Dimensions.PADDING_SIZE_EXTRA_SMALL),
+              child: Icon(icon, color: transparent ? Theme.of(context).primaryColor : Theme.of(context).cardColor),
+            ) : SizedBox(),
+            Text(buttonText ??'', textAlign: TextAlign.center, style: robotoBold.copyWith(
+              color: transparent ? Theme.of(context).cardColor : Theme.of(context).cardColor,
+              fontSize: fontSize != null ? fontSize : Dimensions.fontSizeLarge,
+            )),
+          ]),
+        ),
       ),
     )));
   }
