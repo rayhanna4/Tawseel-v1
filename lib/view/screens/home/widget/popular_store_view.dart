@@ -132,7 +132,7 @@ class PopularStoreView extends StatelessWidget {
                                           ClipRRect(
                                             borderRadius: BorderRadius.vertical(
                                                 top: Radius.circular(
-                                                    Dimensions.RADIUS_SMALL)),
+                                                    Dimensions.RADIUS_EXTRA_LARGE)),
                                             child: CustomImage(
                                               image:
                                                   '${Get.find<SplashController>().configModel.baseUrls.storeCoverPhotoUrl}'
@@ -140,6 +140,7 @@ class PopularStoreView extends StatelessWidget {
                                               height: 150,
                                               width: 250,
                                               fit: BoxFit.cover,
+
                                             ),
                                           ),
                                           DiscountTag(
@@ -159,7 +160,7 @@ class PopularStoreView extends StatelessWidget {
                                           Positioned(
                                             top: Dimensions
                                                 .PADDING_SIZE_EXTRA_SMALL,
-                                            right: Dimensions
+                                            left: Dimensions
                                                 .PADDING_SIZE_EXTRA_SMALL,
                                             child:
                                                 GetBuilder<WishListController>(
