@@ -1,4 +1,4 @@
-package com.sareea.userapp
+package com.tawseel.userapp
 
 import io.flutter.embedding.android.FlutterActivity
 
